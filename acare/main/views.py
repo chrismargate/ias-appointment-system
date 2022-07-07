@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(response):
-    return HttpResponse("<h1>Successs!!</h1>")
+    return render(response,'main/static/index.html',{})
 
 def careers(response):
     pass
