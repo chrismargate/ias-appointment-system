@@ -1,23 +1,25 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>ACare - Login</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/82fa732971.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <img class="wave" src="img/wave.png">
+        <img class="wave" src="{% static 'assets/img/wave.png' %}">
         <div class="container">
             <div class="img">
-                <img src="img/bg.svg">
+                <img src="{% static 'assets/img/bg.svg' %}">
             </div>
             <div class="login-content">
                 <form action="index.html">
-                    <img src="img/avatar.svg">
+                    <img src="{% static 'assets/img/avatar.svg' %}">
                     <h2 class="title">Welcome</h2>
                        <div class="input-div one">
                           <div class="i">
@@ -42,6 +44,6 @@
                 </form>
             </div>
         </div>
-        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="{% static 'assets/js/main.js' %}"></script>
     </body>
     </html>
