@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
-import django_on_heroku
+import django_heroku
 # import dj_database_url
 import os
 
@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-$2#80tciso!0uhjf%ol*24$x45%r&plp!*0$55qo1g-fczc%=^
 DEBUG = False
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['127.0.0.1','acaresystem.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','myacareapp.herokuapp.com']
 
 
 # Application definition
@@ -125,7 +125,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
 
 # PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-django_on_heroku.settings(locals())
+django_heroku.settings(locals())
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
