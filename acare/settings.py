@@ -11,8 +11,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
-import django_on_heroku
-# import dj_database_url
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -29,7 +27,6 @@ DEBUG = False
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['127.0.0.1','myacareapp.herokuapp.com']
-
 
 # Application definition
 
@@ -125,6 +122,8 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
 
 # PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+import django_on_heroku
 django_on_heroku.settings(locals())
 
 # Default primary key field type
