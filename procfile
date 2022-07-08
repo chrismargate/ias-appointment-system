@@ -1,1 +1,1 @@
-web: gunicorn -chdir acare.wsgi --log-file -
+web: gunicorn acare.wsgi --log-file -
